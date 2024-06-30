@@ -1,0 +1,334 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+}
+:root{
+    --color-primary :#ffC451;
+    --color-secondary : white;
+    --color-third : black;
+}
+.Container{
+     height: 100vh;
+     width: 100vw;
+     
+     
+}
+.Container::before{
+    content: "";
+    background: url('Backgrund\ Image.jpg') no-repeat center/cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(1.4px) brightness(0.3);
+}
+
+header{
+    margin-top: 15px;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    line-height: 1;
+    position: sticky;
+    
+}
+span{
+    color: var(--color-primary);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.2em;
+    margin: 14px 20px 0px 100px;
+
+}
+
+.Unorders{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+
+    width: 50vw;
+    margin: auto;
+    padding-top: 20px;
+    list-style: none;
+    font-size: 1.2em;
+    padding: 10px;
+}
+.Unorders ul{
+    display: flex;
+    list-style: none;
+}
+
+.Unorders ul li{
+    position: relative;
+    padding: 10px 15px;
+}
+
+.Unorders ul li a{
+    text-decoration: none;
+   
+}
+
+.Unorders ul li a:hover{
+    transition: all 0.5s;
+    color: var(--color-primary);
+}
+
+.dropdown-menu{
+    display: none;
+}
+
+.dropdown-menu ul li{
+    background-color: var(--color-secondary);
+    
+}
+
+.dropdown-menu ul li:hover{
+    background-color:var(--color-primary);
+}
+
+.dropdown-menu ul li a:hover{
+    color: var(--color-third);
+}
+
+.dropdown-menu ul li a{
+    padding: 0;
+    color: var(--color-third);
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.Unorders ul li:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    left: 20%;
+    top: 80%;
+    background-color: var(--color-secondary);
+    width: 150px;
+
+}
+
+.Unorders ul li:hover .dropdown-menu ul{
+    display: block;
+}
+
+.Unorders ul li:hover .dropdown-menu ul li{
+    width: 140px;
+}
+
+.fas{
+    color:var(--color-primary);
+    float: right;
+    margin-left: 90px;
+    padding: 0;
+}
+
+.fas:hover{
+    color: var(--color-primary);
+}
+
+.dropdown-menu-1{
+    display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background-color: var(--color-primary);
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 ul li{
+    width: 170px;
+}
+
+.btn{
+    color: var(--color-secondary);
+    background: transparent;
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 160px;
+    height: 30px;
+    margin: auto;
+    border: 2px solid var(--color-primary);
+    border-radius: 6px ;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn:hover{
+    transition: all 0.3s;
+   background-color:  var(--color-primary);
+   color: rgb(66, 65, 65);
+   cursor: pointer;
+   outline: none;
+   border: none;
+   font-family: "Poppins", sans-serif;
+   font-size: 1em;
+   font-weight: bold;
+}
+.HOME{
+    color: var(--color-primary);
+}
+
+li:hover{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+
+/* THIS IS HEADING SECTION  */
+
+.Main-Section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    line-height: 1.1;
+}
+.Main-Section h1{
+    font-size: 3.7em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.SPANS{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.5em;
+    color: rgb(160, 156, 156);
+    line-height: 1.6;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.Second-Main-Section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 30vh ;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    margin-top: 45px;
+}
+
+.fa-solid , .fa-regular{
+    font-size: 2.2em;
+    font-style: normal;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 13px;
+}
+h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    font-style: normal;
+    color: rgb(204, 202, 202);
+}
+.BOX{
+    position: relative;
+    height: 170px;
+    width: 170px;
+    border: 1.5px solid rgb(99, 98, 98);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.BOX:hover{
+    box-shadow: 0px 0px 1px 1px var(--color-primary);
+}
+
+.BOX-1 , .BOX-2 , .BOX-3 , .BOX-4 , .BOX-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.BOX:hover h4{
+    color: var(--color-primary);
+    transition: 0.8s all;
+}
+
+.About{
+    margin-left: 80px;
+    display: flex;
+    margin-top: 100px;
+    height: 100%;
+    width: 99%;
+}
+
+h5{
+    color: var(--color-third);
+    display: flex;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1.1px;
+    word-spacing: 4px;
+    padding-bottom: 20px;
+}
+
+p{
+    color: var(--color-third);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1em;
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+}
+
+.para-1{
+    font-style: italic;
+}
+
+.para-2{
+    padding-bottom: 20px;
+}
+
+.PPP > i{
+    font-size: 1.2em;
+    padding: 14px;
+
+}
+
+.para-6 , .para-7{
+    padding-left: 40px;
+    margin: 0%;
+}
+
+.para-8{
+    padding-top: 20px;
+}
+
+aside > img{
+    height: 430px;
+    width: 580px;
+    padding-left: 50px;
+}
